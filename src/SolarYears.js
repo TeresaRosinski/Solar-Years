@@ -11,5 +11,8 @@ export class userAge {
   convertEarthAgeToMars(){
     return (this.earthAge/1.88);
   }
+  convertEarthAgeToJupiter() {
+    
+  }
 
 };

@@ -25,6 +25,11 @@ describe('userAge', ()=>{
     expect(user1.convertEarthAgeToMars()).toEqual(23.93617021276596);
   });
 
+  test('should correctly change EarthAge to JupiterAge', ()=> {
+    const user1 = new userAge(45);
+    expect(user1.convertEarthAgeToJupiter()).toEqual(3.87);
+  });
+
 });
 
 
