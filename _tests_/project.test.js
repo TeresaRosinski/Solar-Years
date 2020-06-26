@@ -12,7 +12,12 @@ describe('userAge', ()=>{
 
   test('should correctly change EarthAge to MercuryAge', ()=> {
     const user1 = new userAge(45);
-    expect(user1.MercuryAge).toEqual(187.5);
+    expect(user1.convertEarthAgeToMercury()).toEqual(187.5);
+  });
+
+  test('should correctly change EarthAge to VenusAge', ()=> {
+    const user1 = new userAge(45);
+    expect(user1.convertEarthAgeToVenus()).toEqual(72.5806452);
   });
 
 });

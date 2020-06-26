@@ -1,10 +1,14 @@
 export class userAge {
-  constructor (earthAge){
-  this.earthAge=earthAge;
-  this.MercuryAge=MercuryAge;
+  constructor (earthAge){ 
+    this.earthAge=earthAge;
+    console.log(this.earthAge);
   }
-  changeAgeMercury(earthAge){
-    //this.MercuryAge=this.earthAge/.24
+  convertEarthAgeToMercury(){ 
+    console.log(this.earthAge);
+    return (this.earthAge/.24);
+  }
+  convertEarthAgeToVenus(){
+    
   }
 
 };
