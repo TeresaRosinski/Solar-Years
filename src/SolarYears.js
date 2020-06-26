@@ -29,6 +29,6 @@ export class userAge {
         lifeLeftString += `On Mars you have outlived the global life expectancy by ${(this.earthAge/1.88)-72} years.` 
         lifeLeftString += `On Jupiter you have outlived the global life expectancy by ${(this.earthAge/1.88)-72} years.` 
       }
-      return lifeLeftString; 
+    return lifeLeftString; 
   }
-};
+}

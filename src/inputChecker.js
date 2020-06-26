@@ -4,4 +4,4 @@ export function checkAge(userAge) {
   } else {
     return false;
   }
-};
+}
