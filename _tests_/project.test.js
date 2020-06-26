@@ -8,7 +8,12 @@ describe('userAge', ()=>{
   test('should correctly create a userAge class', ()=>{
     const user1 = new userAge(45);
     expect(user1.earthAge).toEqual(45);
-  })
+  });
+
+  test('should correctly change EarthAge to MercuryAge', ()=> {
+    const user1 = new userAge(45);
+    expect(user1.MercuryAge).toEqual(187.5);
+  });
 
 });
 
