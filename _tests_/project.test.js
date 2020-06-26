@@ -30,6 +30,11 @@ describe('userAge', ()=>{
     expect(user1.convertEarthAgeToJupiter()).toEqual(3.794266441821248);
   });
 
+  test('should create a string that tells the user how many years they have left on all planets', ()=> {
+    const user1 = new userAge(45);
+    expect(user1.lifeLeftAllPlanets()).toEqual(" ");
+  });
+
 });
 
 
