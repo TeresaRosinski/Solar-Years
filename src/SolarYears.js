@@ -16,13 +16,12 @@ export class userAge {
   }
   lifeLeftAllPlanets() {
     let lifeLeftString =`You are currently ${this.earthAge} years old. The life expectancy on earth is 72 years.`
-    let lifeExpectancy = 72;
       if (this.earthAge < 72) {
         lifeLeftString += `On earth you are expected to live ${72-this.earthAge} years more.`
-        lifeLeftString += `On Mercury you are expecte to live ${72-(this.earthAge/.24)} years more.` 
-        lifeLeftString += `On Venus you are expecte to live ${72-(this.earthAge/.62)} years more.` 
-        lifeLeftString += `On Mars you are expecte to live ${72-(this.earthAge/1.88)} years more.` 
-        lifeLeftString += `On Jupiter you are expecte to live ${72-(this.earthAge/11.86)} years more.` 
+        lifeLeftString += `On Mercury you are expected to live ${416.67-(this.earthAge/.24)} years more.` 
+        lifeLeftString += `On Venus you are expected to live ${161.12-(this.earthAge/.62)} years more.` 
+        lifeLeftString += `On Mars you are expected to live ${53.19-(this.earthAge/1.88)} years more.` 
+        lifeLeftString += `On Jupiter you are expected to live ${8.431-(this.earthAge/11.86)} years more.` 
       } else {
         lifeLeftString += `On earth you have outlived the global life expectancy by ${this.earthAge-72} years.`
         lifeLeftString += `On Mercury you have outlived the global life expectancy by ${(this.earthAge/.24)-72} years.` 
