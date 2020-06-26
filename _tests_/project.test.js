@@ -20,11 +20,15 @@ describe('userAge', ()=>{
     expect(user1.convertEarthAgeToVenus()).toEqual(72.58064516129032);
   });
 
+  test('should correctly change EarthAge to MarsAge', ()=> {
+    const user1 = new userAge(45);
+    expect(user1.convertEarthAgeToMars()).toEqual(23.93617021276596);
+  });
+
 });
 
 
 describe('ageChecker', ()=>{
-
   test('Should check that a user enters number between 0 and 150', ()=> {
     expect(checkAge(155)).toEqual(true);
     expect(checkAge(-5)).toEqual(true);
