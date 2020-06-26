@@ -4,7 +4,6 @@ import { TestScheduler } from 'jest';
 
 
 describe('userAge', ()=>{
-  
 
   test('should correctly create a userAge class', ()=>{
     const user1 = new userAge(45);
@@ -16,11 +15,8 @@ describe('userAge', ()=>{
 
 describe('ageChecker', ()=>{
 
-test('Should check that a user enters number between 0 and 150', ()=>{
-  const tooOld = new userAge(151);
-  expect(tooOld.earthAge).toEqual(wrongAge);
-  const tooYoung = new userAge(0);
-  expect(tooYoung.earthAge).toEqual(wrongAge);
-
-});
+  test('Should check that a user enters number between 0 and 150', ()=> {
+    expect(checkAge(155)).toEqual(true);
+    expect(checkAge(-5)).toEqual(true);
+  });
 });
