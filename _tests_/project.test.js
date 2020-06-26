@@ -17,7 +17,7 @@ describe('userAge', ()=>{
 
   test('should correctly change EarthAge to VenusAge', ()=> {
     const user1 = new userAge(45);
-    expect(user1.convertEarthAgeToVenus()).toEqual(72.5806452);
+    expect(user1.convertEarthAgeToVenus()).toEqual(72.58064516129032);
   });
 
 });

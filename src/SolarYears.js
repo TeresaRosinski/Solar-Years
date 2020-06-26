@@ -5,7 +5,7 @@ export class userAge {
   }
   convertEarthAgeToMercury(){ 
     console.log(this.earthAge);
-    return (this.earthAge/.24);
+    return (this.earthAge/(.24));
   }
   convertEarthAgeToVenus(){
     return (this.earthAge/.62);
