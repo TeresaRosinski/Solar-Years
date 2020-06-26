@@ -34,6 +34,9 @@ describe('userAge', ()=>{
     //for a user younger than the global life expectancy
     const user1 = new userAge(45);
     expect(user1.lifeLeftAllPlanets()).toEqual("You are currently 45 years old. The life expectancy on earth is 72 years.On earth you are expected to live 27 years more.On Mercury you are expected to live 229.17000000000002 years more.On Venus you are expected to live 88.53935483870968 years more.On Mars you are expected to live 29.25382978723404 years more.On Jupiter you are expected to live 4.636733558178751 years more.");
+    //for a user older than the global life expectancy
+    const user2 = new userAge(100);
+    expect(user1.lifeLeftAllPlanets()).toEqual("You are currently 45 years old. The life expectancy on earth is 72 years.On earth you are expected to live 27 years more.On Mercury you are expected to live 229.17000000000002 years more.On Venus you are expected to live 88.53935483870968 years more.On Mars you are expected to live 29.25382978723404 years more.On Jupiter you are expected to live 4.636733558178751 years more.");
   });
 
 });
