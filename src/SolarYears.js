@@ -12,7 +12,7 @@ export class userAge {
     return (this.earthAge/1.88);
   }
   convertEarthAgeToJupiter() {
-    
+    return (this.earthAge/11.86);
   }
 
 };
