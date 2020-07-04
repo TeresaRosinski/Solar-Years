@@ -16,7 +16,7 @@ export class userAge {
   }
   lifeLeftAllPlanets() {
     let lifeLeftString = `You are currently ${this.earthAge} years old. The life expectancy on earth is 72 years.`;
-    if (this.earthAge < 72) {
+    if (this.earthAge <= 72) {
       lifeLeftString += `On earth you are expected to live ${
         72 - this.earthAge
       } years more.`;

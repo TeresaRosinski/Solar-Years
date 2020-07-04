@@ -33,14 +33,6 @@ Open via Bash/GitBash:
 
 ## Specifications
 
-Behavior: The program only allows numerical values to be tested.  
-* Input: 3, t        
-* Output: 3, 'please only enter numerical values' 
-
-Behavior: The program only accepts numerical values greater than 0 and less than  150     
-* Input: 1, 0, 151     
-* Output: 1, 'Please enter a value greater than 0', 'please enter a value less than 150'
-
 Behavior: The program converts the entered value into Mercury years (.24 Earth years). The formula for this will be Earth Years/.24     
 * Input: Earth years = 30       
 * Output: Mercury years = 125
