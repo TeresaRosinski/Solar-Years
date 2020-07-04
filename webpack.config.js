@@ -1,7 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/main.js',
@@ -9,17 +10,20 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devtool: 'eval-source-map',  
-  devServer: {                
-  contentBase: './dist' 
+  devtool: 'eval-source-map',
+  devServer: {
+    contentBase: './dist'
   },
   plugins: [
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Solar Age Counter',
+      title: 'currency-exchange',
       template: './src/index.html',
       inject: 'body'
+    }),
+    new Dotenv({
+      path: './.env'
     })
   ],
   module: {
@@ -35,7 +39,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "eslint-loader"
-      }
+      },
       {
         test: /\.(gif|png|jpe?g)$/,
         use: [
@@ -48,13 +52,12 @@ module.exports = {
           }
         ]
       },
-      
       {
         test:/\.html$/,
         use: [
           'html-loader'
         ]
-      },
+      }
     ]
   }
 };
